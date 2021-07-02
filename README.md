@@ -1,1 +1,1 @@
-# AlexNet-Implementation-through-a-Transfer-Learning-Approach-using-Pytorch
+# AlexNet-Implementation-a-Transfer-Learning-Approach-using-Pytorch
