@@ -6,7 +6,7 @@
 # Datasets
 CIFAR-10 Dataset
 
-This Dataset involves 50000 training samples and 10000 testing samples classified into 10 different classes.
+This Dataset involves **50000 training samples** and **10000 testing samples** classified into **10 different classes**.
 
 Each image sample is a 3-channeled image sample (RGB)
 
@@ -20,9 +20,9 @@ torchvision >= 0.2.1
 # Architecture
 
 # Obtained Accuracy
-Accuracy Obtained after Pre-Training = 86.57 %
+Accuracy Obtained after Pre-Training = **86.57 %**
 
-Accuracy Obtained after Fine-Tuning = 87.18 %
+Accuracy Obtained after Fine-Tuning = **87.18 %**
 
 # Obtained Outputs
 ### **Outputs Obtained After Pre-Training :**
