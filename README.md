@@ -69,7 +69,8 @@ Max Pooling layers  - Kernel Size : 3x3, Stride : 2
 
 ### **FLATTEN**
 
-###**Classifier**
+### **Classifier**
+
 Dropout - 0.5 (Probability of Dropping Neurons)
 
 Fully Connected - 9216 --> 4096
