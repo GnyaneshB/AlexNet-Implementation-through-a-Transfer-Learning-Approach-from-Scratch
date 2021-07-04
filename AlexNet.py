@@ -9,7 +9,7 @@ import torch
 from torch import nn
 class AlexNet(nn.Module):
 
-    def __init__(self, num_classes = 10):
+    def __init__(self, num_classes = 10): # Number of Output classes are set to 10 as there exists 10 differnet classes in the presented dataset 
         super(AlexNet, self).__init__()
         self.features = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=11, stride=4, padding=2),
