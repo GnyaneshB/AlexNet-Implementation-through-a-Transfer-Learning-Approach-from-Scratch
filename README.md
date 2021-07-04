@@ -5,7 +5,7 @@
 To predict the class label of an image given as input from the provided dataset (CIFAR-10).
 
 ## Datasets
-CIFAR-10 Dataset
+CIFAR-10 Dataset  - _(Provided)
 
 This Dataset involves **50000 training samples** and **10000 testing samples** classified into **10 different classes**.
 
