@@ -9,7 +9,7 @@ Neural Networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e92
 This architecture was designed in the year 2012 by Alex Krizhevsky in collaboration with his Ph.D Advisor - Geoffrey Hinton and Ilya Sutskever with 89098 citations as of today.
 It competed in ILSVRC'2010 and ILSVRC'2012. 
 
-This paper is considered as one of the most influential paper in the field of Computer Vision. The architecture of the model is comparitively similar to that of LeNet with some additional depth of layers and regularization method called [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) which helps in reducing the effect of overfitting. This paper provides an intuition about working on Deep Convolutional Layers along with usage of Non-Saturating non-linearity called as ReLU and regularizations like [Data Augumentation](https://en.wikipedia.org/wiki/Data_augmentation) and Dropout.
+This paper is considered as one of the most influential paper in the field of Computer Vision. The architecture of the model is comparitively similar to that of [LeNet](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf) with some additional depth of layers and regularization method called [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) which helps in reducing the effect of overfitting. This paper provides an intuition about working on Deep Convolutional Layers along with usage of Non-Saturating non-linearity called as ReLU and regularizations like [Data Augmentation](https://en.wikipedia.org/wiki/Data_augmentation) and Dropout.
 
 ## Task
 To predict the class label of an image given as input from the provided dataset (CIFAR-10).
@@ -37,8 +37,54 @@ Number of Image Channels = 3
 
 Activation = ReLU
 
-256x256 Input Size
+256x256 Input Size (Resized to 224x224 during preprocessing)
 
+**Features**
+
+Convolutional Layer - Feature Maps : 64, Kernel Size : 11x11, Stride : 4, Padding : 2
+
+ReLU Activation
+
+Max Pooling layers  - Kernel Size : 3x3, Stride : 2
+
+Convolutional Layer - Feature Maps : 192, Kernel Size : 5x5, Padding : 2
+
+ReLU Activation
+
+Max Pooling layers  - Kernel Size : 3x3, Stride : 2
+
+Convolutional Layer - Feature Maps : 384, Kernel Size : 3x3, Padding : 1
+
+ReLU Activation
+
+Convolutional Layer - Feature Maps : 256, Kernel Size : 3x3, Padding : 1
+
+ReLU Activation
+
+Convolutional Layer - Feature Maps : 256, Kernel Size : 11x11, Padding : 1
+
+ReLU Activation
+
+Max Pooling layers  - Kernel Size : 3x3, Stride : 2
+
+FLATTEN
+
+**Classifier**
+Dropout - 0.5 (Probability of Dropping Neurons)
+
+Fully Connected - 9216 --> 4096
+
+ReLU Activation
+
+Dropout - 0.5
+
+Fully Connected - 4096 --> 1024
+
+ReLU Activation
+
+Fully Connected - 1024 --> 10
+
+**NOTE** - _In the Classifier, Second fully connected layer is modified from 4096 --> 4096 to 4096 --> 1024 in order to reduce overfitting and heavy losses during training as it is being trained for the first on the data producing 10 classes instead of 1000 in case of ImageNet._
 
 ## Obtained Accuracy
 Accuracy Obtained after Pre-Training = **86.57 %**
