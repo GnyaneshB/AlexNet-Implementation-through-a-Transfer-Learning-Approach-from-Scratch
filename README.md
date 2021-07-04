@@ -5,7 +5,9 @@
 
 # Datasets
 CIFAR-10 Dataset
+
 This Dataset involves 50000 training samples and 10000 testing samples classified into 10 different classes.
+
 Each image sample is a 3-channeled image sample (RGB)
 
 # Requirements
