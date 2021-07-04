@@ -51,6 +51,7 @@ class ANTL:
         print(self.device)
         self.class_names = self.image_datasets['train'].classes
 
+        
     def train(self, model, criterion, optimizer):
         since = time.time()
     
@@ -74,38 +75,32 @@ class ANTL:
                     labels = labels.to(self.device)
                     
                     optimizer.zero_grad()
-                    
-                    #forward
-                    #track history if only in train 
+    
                     with torch.set_grad_enabled(phase == 'train'):
                         outputs = model(inputs)
                         _, preds = torch.max(outputs, 1)
                         loss = criterion(outputs, labels)
                         
-                        # backward + optimize only if in training phase 
                         if phase == 'train':
                             loss.backward()
                             optimizer.step()
                     
-                    running_loss += loss.item() * inputs.size(0) # loss with batch size 
+                    running_loss += loss.item() * inputs.size(0) 
                     running_corrects += torch.sum(preds == labels.data)
-        
-  
+       
                 epoch_loss = running_loss / self.dataset_sizes[phase]
                 epoch_acc = running_corrects.double() / self.dataset_sizes[phase]
                 print('{} loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
-                        
-                # deep copy model
+                       
                 if phase == 'test' and epoch_acc > best_acc:
                     best_acc = epoch_acc
                     best_model_wts = copy.deepcopy(model.state_dict())
                     
             print()
-            
         time_elapsed = time.time() - since
         print('Training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed%60))
         print('Best Test acc : {}'.format(best_acc))
-    # load best model weights
+        
         model.load_state_dict(best_model_wts)
         return model
 
@@ -156,7 +151,7 @@ class ANTL:
                 
                 for j in range(inputs.size()[0]):
                     images_so_far += 1
-                    ax = plt.subplot(num_images//2, 2, images_so_far) # rows, columns, index position of current image
+                    ax = plt.subplot(num_images//2, 2, images_so_far) 
                     ax.axis('off')
                     ax.set_title('Predicted Label: {} , Ground Label: {}'.format(self.class_names[preds[j]], self.class_names[labels[j]]))
                     imshow(inputs.cpu().data[j])
