@@ -32,7 +32,7 @@ class AlexNet(nn.Module):
             nn.Linear(256 * 6 * 6, 4096),
             nn.ReLU(inplace=True),
             nn.Dropout(),
-            nn.Linear(4096, 1024),
+            nn.Linear(4096, 1024), # (4096, 4096) --> (4096, 1024) to avoid overfitting and heavy losses during training
             nn.ReLU(inplace=True),
             nn.Linear(1024, num_classes),
         )
