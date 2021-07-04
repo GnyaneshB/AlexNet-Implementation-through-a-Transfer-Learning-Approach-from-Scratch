@@ -37,7 +37,7 @@ class ANTL:
                                     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
                                     ])
                                 }
-        self.data_dir = 'C:/Users/cgnya/OneDrive/Desktop/MY LIBRARY/Books/IT/Pytorch/data/cifar10'
+        self.data_dir = 'C:/Users/cgnya/OneDrive/Desktop/MY LIBRARY/Books/IT/Pytorch/data/cifar10' #Paste the address of the folder involving your data
         self.image_datasets = {x : datasets.ImageFolder(os.path.join(self.data_dir, x),
                                            self.data_transforms[x])
                                     for x in ['train', 'test']}
