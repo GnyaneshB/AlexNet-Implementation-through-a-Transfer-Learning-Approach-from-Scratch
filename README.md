@@ -39,7 +39,7 @@ Activation = ReLU
 
 256x256 Input Size (Resized to 224x224 during preprocessing)
 
-**Features**
+### **Features**
 
 Convolutional Layer - Feature Maps : 64, Kernel Size : 11x11, Stride : 4, Padding : 2
 
@@ -67,9 +67,9 @@ ReLU Activation
 
 Max Pooling layers  - Kernel Size : 3x3, Stride : 2
 
-FLATTEN
+### **FLATTEN**
 
-**Classifier**
+###**Classifier**
 Dropout - 0.5 (Probability of Dropping Neurons)
 
 Fully Connected - 9216 --> 4096
