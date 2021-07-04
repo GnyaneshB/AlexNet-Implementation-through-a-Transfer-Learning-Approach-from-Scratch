@@ -1,7 +1,8 @@
 # AlexNet Implementation 
-# A Transfer Learning Approach using Pytorch
+## A Transfer Learning Approach using Pytorch
 
 # Task
+To predict the class label of the image given as input from the provided dataset (CIFAR-10).
 
 # Datasets
 CIFAR-10 Dataset
