@@ -1,5 +1,6 @@
 # AlexNet Implementation 
 > **A Transfer Learning Approach using Pytorch**
+
 The evolving amount of data and 
 This architecture was evolved in the year 2012 designed by Alex Krizhevsky in collaboration with his Ph.D Advisor - Geoffrey Hinton and Ilya Sutskever with 89098 citations as of today.
 
