@@ -1,32 +1,32 @@
 # AlexNet Implementation 
-## A Transfer Learning Approach using Pytorch
+# A Transfer Learning Approach using Pytorch
 
-# Task
+## Task
 To predict the class label of the image given as input from the provided dataset (CIFAR-10).
 
-# Datasets
+## Datasets
 CIFAR-10 Dataset
 
 This Dataset involves **50000 training samples** and **10000 testing samples** classified into **10 different classes**.
 
 Each image sample is a 3-channeled image sample (RGB)
 
-# Requirements
+## Requirements
 Python >= 3.0
 
 PyTorch Version >= 0.4.0
 
 torchvision >= 0.2.1
 
-# Architecture
+## Architecture
 
-# Obtained Accuracy
+## Obtained Accuracy
 Accuracy Obtained after Pre-Training = **86.57 %**
 
 Accuracy Obtained after Fine-Tuning = **87.18 %**
 
-# Obtained Outputs
-### **Outputs Obtained After Pre-Training :**
+## Obtained Outputs
+#### **Outputs Obtained After Pre-Training :**
 
 ![pt](https://user-images.githubusercontent.com/67636257/124396219-d4e15e00-dd25-11eb-9ada-3f75543d2914.png)
 
@@ -36,7 +36,7 @@ Accuracy Obtained after Fine-Tuning = **87.18 %**
 
 ![pt3](https://user-images.githubusercontent.com/67636257/124396210-d1e66d80-dd25-11eb-9de7-87d47b32e9d9.png)
 
-### **Outputs Obtained After Fine-Tuning :**
+#### **Outputs Obtained After Fine-Tuning :**
 
 ![ft](https://user-images.githubusercontent.com/67636257/124396211-d27f0400-dd25-11eb-9b54-0b7409357c1b.png)
 
