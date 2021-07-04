@@ -1,10 +1,12 @@
 # AlexNet Implementation 
 > **A Transfer Learning Approach using Pytorch**
+The evolving amount of data and 
+This architecture was evolved in the year 2012 designed by Alex Krizhevsky in collaboration with his Ph.D Advisor - Geoffrey Hinton and Ilya Sutskever with 89098 citations as of today.
 
-This architecture was evolved in the year 2012 designed by Alex Krizhevsky in collaboration with his Ph.D Advisor Ilya Sutskever and Geoffrey Hinton and Ilya Sutskever.
+It competed in ILSVRC ' 2010 and ILSVRC ' 2012. 
 
-It competed in the ILSVRC'2012. This paper - [ImageNet Classification with Deep Convolutional
-Neural Networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) is considered as one of the most influential one in Computer Vision.
+This paper - [ImageNet Classification with Deep Convolutional
+Neural Networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) is considered as one of the most influential paper in the field of Computer Vision. The architecture of the model is comparitively similar to that of LeNet with some additional depth of layers and regularization method called ["Dropout"](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) which helps in reducing the effect of overfitting. This paper provides an intuition about working on Deep Convolutional Layers along with usage of Non-Saturating non-linearity called as ReLu and regularizations like [Data Augumentation](https://en.wikipedia.org/wiki/Data_augmentation) and Dropout.
 
 ## Task
 To predict the class label of an image given as input from the provided dataset (CIFAR-10).
