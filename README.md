@@ -1,6 +1,11 @@
 # AlexNet Implementation 
 > **A Transfer Learning Approach using Pytorch**
 
+This architecture was evolved in the year 2012 designed by Alex Krizhevsky in collaboration with his Ph.D Advisor Ilya Sutskever and Geoffrey Hinton and Ilya Sutskever.
+
+It competed in the ILSVRC'2012. This paper - [https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf] ImageNet Classification with Deep Convolutional
+Neural Networks is considered as one of the most influential one in Computer Vision.
+
 ## Task
 To predict the class label of an image given as input from the provided dataset (CIFAR-10).
 
