@@ -20,9 +20,9 @@ torchvision >= 0.2.1
 # Architecture
 
 # Obtained Accuracy
-Accuracy Obtained after Pre-Training = 
+Accuracy Obtained after Pre-Training = 86.57 %
 
-Accuracy Obtained after Fine Tuning = 
+Accuracy Obtained after Fine Tuning = 87.18 %
 
 # Obtained Outputs
 
