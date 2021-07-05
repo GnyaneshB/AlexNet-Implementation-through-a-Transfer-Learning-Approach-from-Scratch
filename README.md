@@ -17,7 +17,7 @@ To predict the class label of an image given as input from the provided dataset 
 ## Datasets
 CIFAR-10 Dataset
 
-_[Download it from here](https://github.com/GnyaneshB/CIFAR-10-images)_
+_[Download it from here](https://www.kaggle.com/swaroopkml/cifar10-pngs-in-folders)_
 
 This Dataset involves **50000 training samples** and **10000 testing samples** classified into **10 different classes**.
 
