@@ -3,7 +3,7 @@
 
 The Evolving amount of Data and processing level of GPU's helped the researchers in the field of Deep Learning to perform better computations using the largely available data in order to produce better results regarding the tasks of Deep Learning like Compter Vision and Natural Language Processing.
 
-One such evolution in the field of Computer is Vision is AlexNet - [ImageNet Classification with Deep Convolutional
+One such evolution in the field of Computer Vision is AlexNet - [ImageNet Classification with Deep Convolutional
 Neural Networks](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
 This architecture was designed in the year 2012 by Alex Krizhevsky in collaboration with his Ph.D Advisor - Geoffrey Hinton and Ilya Sutskever with 89098 citations as of today.
