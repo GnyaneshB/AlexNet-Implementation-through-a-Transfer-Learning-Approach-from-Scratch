@@ -85,7 +85,7 @@ ReLU Activation
 
 Fully Connected - 1024 --> 10
 
-**NOTE** - _In the Classifier, Second fully connected layer is modified from 4096 --> 4096 to 4096 --> 1024 in order to reduce overfitting and heavy losses during training as it is being trained for the first on the data producing 10 classes instead of 1000 in case of ImageNet._
+**NOTE** - _In the Classifier, Second fully connected layer is modified from 4096 --> 4096 to 4096 --> 1024 in order to reduce overfitting and heavy losses during training as it is being trained for the first time on the data producing 10 classes instead of 1000 in case of ImageNet._
 
 ## Obtained Accuracy
 Accuracy Obtained after Pre-Training = **86.57 %**
