@@ -48,7 +48,7 @@ class ANTL:
         self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
         self.epochs = 40
         self.criterion = torch.nn.CrossEntropyLoss()
-        print(self.device)
+        print("Running on : ", self.device)
         self.class_names = self.image_datasets['train'].classes
 
         
